@@ -3,12 +3,17 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 import threading
 import hashlib
 from os.path import exists
+from os import mkdir
 import numpy as np
 import argparse
 import warnings
 
 warnings.filterwarnings('ignore')
 
+if not exists("dbs"):
+	print("test")
+	mkdir("dbs")
+	
 def parser():
 	parser = argparse.ArgumentParser(description="rainbownator args")
 	parser.add_argument("--hash",required=True)
