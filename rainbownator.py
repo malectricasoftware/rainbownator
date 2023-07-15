@@ -11,7 +11,6 @@ import warnings
 warnings.filterwarnings('ignore')
 
 if not exists("dbs"):
-	print("test")
 	mkdir("dbs")
 	
 def parser():
