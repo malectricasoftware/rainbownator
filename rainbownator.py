@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, ForeignKey, Column, String, event
+from sqlalchemy import create_engine, Column, String
 from sqlalchemy.orm import sessionmaker, declarative_base
 import threading
 import hashlib
