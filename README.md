@@ -1,6 +1,7 @@
 # rainbownator
 multi threaded hash cracker with support for md5 and sha.  
-generates sqlite dbs to act as rainbow tables on first run through a wordlist.
+generates sqlite dbs to act as rainbow tables on first run through a wordlist.  
+on every following run the rainbowtable will be used for near instant hash retrieval.
 
 ## useage
 rainbownator.py [-h] --hash HASH --algo ALGO --wlist WLIST [--threads THREADS]
