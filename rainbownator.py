@@ -44,7 +44,7 @@ class Pass(Base):
 		self.sha512 = sha512
 
 	def __repr__(self):
-		return f"plaintext: {self.plain} - md5: {self.md5} - shad1: {self.sha1} - sha224: {self.sha224} - sha256: {self.sha256} - sha384: {self.sha384} - sha512: {self.sha512}"
+		return f"plaintext: {self.plain} - md5: {self.md5} - sha1: {self.sha1} - sha224: {self.sha224} - sha256: {self.sha256} - sha384: {self.sha384} - sha512: {self.sha512}"
 
 args=parser()
 dbname=args.wlist.split("/")[-1].rsplit(".",1)[0]
